@@ -1,5 +1,7 @@
 
+
 .navbar ul {
+  
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -25,4 +27,34 @@
 
 .active {
   background-color: #04AA6D;
+}
+body {
+  margin: 0;
+}
+.aside ul {
+  list-style-type: none;
+  margin-top: 20px;
+  padding: 0;
+  width: 10%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.aside li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.aside li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.aside li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
 }
