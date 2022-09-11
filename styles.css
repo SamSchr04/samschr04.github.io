@@ -1,8 +1,7 @@
-
-
 .navbar ul {
   
   list-style-type: none;
+  
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -28,9 +27,8 @@
 .active {
   background-color: #04AA6D;
 }
-body {
-  margin: 0;
-}
+
+
 .aside ul {
   list-style-type: none;
   margin-top: 20px;
