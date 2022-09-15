@@ -1,6 +1,7 @@
 body {
+  
   font-family: "Arial", Serif;
-  background-color: #d7d9d9;
+  background-color: #ccc;
   overflow-x: hidden;
 }
 
@@ -51,7 +52,16 @@ body {
   display: block;
   transition: 0.3s;
 }
+
+.active {
+  background-color: #808080;
+}
+
 table, th, td{
   border: 1px solid black
 }
+#hp  {
+  float: right;    
+   margin: 0 0 0 15px;
+  }
   

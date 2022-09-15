@@ -5,39 +5,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Dashboard</title>
+  <title>FAQ</title>
 
   <link rel="stylesheet" href="styles.css">
+
 
 </head>
 
 <body>
 
   <nav class="navbar">
-    <ul>
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+          <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+          <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+          <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+
+        </svg>
+      </a>
+    </span>
+    <ul class="navbar-nav">
       <li><a href="http://127.0.0.1/index.html">Home</a></li>
       <li><a class="active" href="http://127.0.0.1/dashboard.html">Dashboard</a></li>
       <li><a href="http://127.0.0.1/faq.html">faq</a></li>
       <li><a href="http://127.0.0.1/profile.html">Profile</a></li>
-
+      <li><a href="#">Blog</a></li>
     </ul>
-
   </nav>
-  <aside class="aside">
-    
-      <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
-    
-    </aside>
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="https://hz.nl/over-de-hz/regelingen-documenten-1/onderwijs-en-examenregelingen">Onderwijs en
+      examenregelingen</a>
+    <a
+      href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF.pdf">Uitvoeringsregeling</a>
+    <a
+      href="https://glaze-donut-5a5.notion.site/PCO1en-Your-Showcase-Website-7bc8c340f66047d0b49b83e8dc44ba23">Leeromgeving</a>
+    <a
+      href="https://teams.microsoft.com/l/team/19%3a827654897ab746089c081f24aff1c984%40thread.skype/conversations?groupId=337e8cca-f67d-4132-9fa9-b0c761bbeb94&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c">Teams
+      HBO-ICT</a>
+    <a href="#">MyHz</a>
+    <a href="https://github.com/HZ-HBO-ICT">GitHub leeromgeving</a>
+
+  </div>
+  <div id="main">
     <main>
       <article>
-        <div style="margin-left:10%;padding:1px 16px;height:1000px;">
-          
-          
+
+
+
         <table>
           <tr>
             <th>Blok</th>
@@ -45,34 +61,82 @@
             <th>EC</th>
             <th>Toets</th>
             <th>Cijfer</th>
-            </tr>
-            <tr>
-             <td rowspan="3">1</td>
-             <td>first course</td>
-             <td>5</td>
-             <td>geschreven tentamen</td>
-             <td>5,9</td>
-            </tr>
-            <tr>
-              <td rowspan="2">Second course</td>
-              <td rowspan="2">5</td>
-              <td>Casustoets</td>
-              <td>7,2</td>
-              </tr>
-              <tr>
-                <td>Assessment</td>
-                <td>5,3</td>
-              </tr>
-            
-            
-          
-          hoi
-        </h1>
-        </div>
+          </tr>
+          <tr>
+            <td rowspan="3">1</td>
+            <td>Eerste cursus</td>
+            <td>2,5</td>
+            <td>Geschreven tentamen</td>
+            <td>5,9</td>
+          </tr>
+          <tr>
+            <td>Tweede curus</td>
+            <td>5</td>
+            <td>Casustoets</td>
+            <td>7,2</td>
+          </tr>
+          <tr>
+            <td>Programing basics</td>
+            <td>5</td>
+            <td>Assessment</td>
+            <td>5,3</td>
+          </tr>
+          <tr>
+            <td rowspan="2">2</td>
+            <td rowspan="2">object oriented programming</td>
+            <td rowspan="2">10</td>
+            <td>Case study (50%)</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Project (50%)</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td rowspan="4">3</td>
+
+            <td>Framework Development 1</td>
+            <td>5</td>
+            <td>Case study</td>
+            <td>5</td>
+          </tr>
+          <tr>
+
+            <td rowspan="3">Framework Project 1</td>
+            <td rowspan="3">7,5</td>
+            <td>Project (33%)</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td> Case study program (33%)</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td> Report (33%)</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td rowspan="3">4</td>
+            <td rowspan="3">Framework Project 2</td>
+            <td rowspan="3">10</td>
+            <td>Portfolio (50%)</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Project (25%)</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Assesment (25%)</td>
+            <td>5</td>
+          </tr>
+
+        </table>
+
       </article>
     </main>
-
-
+  </div>
+  <script src="script.js"></script>
 
 </body>
 
