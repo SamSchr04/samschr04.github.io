@@ -1,5 +1,5 @@
 body {
-  
+
   font-family: "Arial", Serif;
   background-color: #ccc;
   overflow-x: hidden;
@@ -44,6 +44,7 @@ body {
   margin-top: 60px;
   transition: 0.5s;
 }
+
 .side-nav a {
   padding: 10px 10px 10px 30px;
   text-decoration: none;
@@ -57,16 +58,62 @@ body {
   background-color: #808080;
 }
 
-table, th, td{
+table,
+th,
+td {
   border: 1px solid black
 }
-#hp  {
-  float: right;    
-   margin: 0 0 0 15px;
-  }
+
+#hp {
+  float: right;
+  margin: 0 0 0 15px;
+}
+
 article {
   padding-left: 60px;
 }
-h1{
+
+h1 {
   text-align: center;
+}
+
+.accordion {
+  padding: 4rem;
+}
+
+summary {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  background: #eceff1;
+  padding: 1rem 2rem;
+}
+
+details {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+details p {
+  margin: 1rem auto;
+  translate: 2rem 0;
+}
+
+summary>* {
+  display: inline;
+}
+table, th, td{
+  border: 1px solid black
+}
+label {
+  padding-right: 10px;
+  font-size: 1rem;
+}
+.notCompleted {
+background-color: #ccc;
+}
+.completed {
+  background-color: green;
 }
