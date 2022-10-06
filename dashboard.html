@@ -64,43 +64,50 @@
           </tr>
           <tr>
             <td rowspan="3">1</td>
-            <td>Eerste cursus</td>
-            <td>2,5</td>
-            <td>Geschreven tentamen</td>
-            <td>5,9</td>
+            <div class="notCompleted">
+              <td>Program and Career Orientation</td>
+              <td>2,5</td>
+              <td>Geschreven tentamen</td>
+              <td>5,9</td>
+            </div>
           </tr>
-          <tr>
-            <td>Tweede curus</td>
+          <tr class="notCompleted">
+            <td>Computer Science Basics</td>
             <td>5</td>
             <td>Casustoets</td>
             <td>7,2</td>
           </tr>
-          <tr>
-            <td>Programing basics</td>
+          <tr class="completed">
+            <td>Programing Basics</td>
             <td>5</td>
             <td>Assessment</td>
             <td>5,3</td>
           </tr>
           <tr>
             <td rowspan="2">2</td>
-            <td rowspan="2">object oriented programming</td>
+
+            <td rowspan="2">Object Oriented Programming</td>
             <td rowspan="2">10</td>
-            <td>Case study (50%)</td>
-            <td>5</td>
+            <div class="completed">
+              <td>Case study (50%)</td>
+              <td>5</td>
+            </div>
           </tr>
-          <tr>
+          <tr class="notCompleted">
             <td>Project (50%)</td>
             <td>5</td>
+
           </tr>
           <tr>
             <td rowspan="4">3</td>
-
-            <td>Framework Development 1</td>
-            <td>5</td>
-            <td>Case study</td>
-            <td>5</td>
+            <div class="notCompleted">
+              <td>Framework Development 1</td>
+              <td>5</td>
+              <td>Case study</td>
+              <td>5</td>
+            </div>
           </tr>
-          <tr>
+          <tr class="notCompleted">
 
             <td rowspan="3">Framework Project 1</td>
             <td rowspan="3">7,5</td>
@@ -130,8 +137,30 @@
             <td>Assesment (25%)</td>
             <td>5</td>
           </tr>
-
+          <tr>
+            <td>The entire year</td>
+            <td>Personal Professional Development</td>
+            <td>12,5</td>
+            <td>Portfolio</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Whenever</td>
+            <td>Personality 1</td>
+            <td>1,25</td>
+            <td>Portfolio</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Personality 2</td>
+            <td>1,25</td>
+            <td>Portfolio</td>
+            <td>5</td>
+          </tr>
         </table>
+        <p><label for="file">NBSA grens:</label>
+          <progress id="file" max="45" value="0"> 0% </progress>
+        </p>
 
       </article>
     </main>
