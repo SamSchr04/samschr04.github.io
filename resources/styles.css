@@ -104,16 +104,26 @@ details p {
 summary>* {
   display: inline;
 }
-table, th, td{
+
+table,
+th,
+td {
   border: 1px solid black
 }
+
 label {
   padding-right: 10px;
   font-size: 1rem;
 }
-.notCompleted {
-background-color: #ccc;
+
+.sufficient {
+  background-color: #90EE90;
 }
-.completed {
-  background-color: green;
+
+.notCompleted {
+  background-color: #D7D7D7;
+}
+
+.insufficient {
+  background-color: #ff6961;
 }
