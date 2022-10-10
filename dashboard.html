@@ -5,15 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Dashboard" content="dashboard, NBSA, cijfers">
   <title>Dashboard</title>
 
   <link rel="stylesheet" href="resources/styles.css">
 
-
 </head>
 
 <body>
-
   <nav class="navbar">
     <span class="open-slide">
       <a href="#" onclick="openSlideMenu()">
@@ -21,7 +20,6 @@
           <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
           <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
           <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
-
         </svg>
       </a>
     </span>
@@ -46,118 +44,116 @@
       HBO-ICT</a>
     <a href="https://portal.hz.nl/">MyHz</a>
     <a href="https://github.com/HZ-HBO-ICT">GitHub leeromgeving</a>
-
   </div>
-  <div id="main">
-    <main>
-      <article>
+  <main>
+    <article>
+      <table>
+        <tr>
+          <th>Blok</th>
+          <th>Cursus</th>
+          <th>EC</th>
+          <th>Toets</th>
+          <th>Cijfer</th>
+        </tr>
+        <tr>
+          <td rowspan="3">1</td>
+          <td class="notCompleted">Program and Career Orientation</td>
+          <td>2,5</td>
+          <td>Geschreven tentamen</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td class="notCompleted">Computer Science Basics</td>
+          <td>5</td>
+          <td>Casustoets</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td class="notCompleted">Programing Basics</td>
+          <td>5</td>
+          <td>Assessment</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td rowspan="2">2</td>
+          <td rowspan="2" class="notCompleted">Object Oriented Programming</td>
+          <td rowspan="2">10</td>
+          <td>Case study (50%)</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Project (50%)</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td rowspan="4">3</td>
+          <td class="notCompleted">Framework Development 1</td>
+          <td>5</td>
+          <td>Case study</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td rowspan="3" class="notCompleted">Framework Project 1</td>
+          <td rowspan="3">7,5</td>
+          <td>Project (33%)</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Case study program (33%)</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td> Report (33%)</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td rowspan="3">4</td>
+          <td rowspan="3" class="notCompleted">Framework Project 2</td>
+          <td rowspan="3">10</td>
+          <td>Portfolio (50%)</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Project (25%)</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Assesment (25%)</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>The entire year</td>
+          <td class="notCompleted">Personal Professional Development</td>
+          <td>12,5</td>
+          <td>Portfolio</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Whenever</td>
+          <td class="notCompleted">Personality 1</td>
+          <td>1,25</td>
+          <td>Portfolio</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td class="notCompleted">Personality 2</td>
+          <td>1,25</td>
+          <td>Portfolio</td>
+          <td>-</td>
+        </tr>
+      </table>
+      <p><label for="file">NBSA grens:</label>
+        <progress id="file" max="45" value="0"> 0% </progress>
+      </p>
 
-
-
-        <table>
-          <tr>
-            <th>Blok</th>
-            <th>Cursus</th>
-            <th>EC</th>
-            <th>Toets</th>
-            <th>Cijfer</th>
-          </tr>
-          <tr>
-            <td rowspan="3">1</td>
-            <td class="notCompleted">Program and Career Orientation</td>
-            <td>2,5</td>
-            <td>Geschreven tentamen</td>
-            <td>5,9</td>
-          </tr>
-          <tr>
-            <td class="notCompleted">Computer Science Basics</td>
-            <td>5</td>
-            <td>Casustoets</td>
-            <td>7,2</td>
-          </tr>
-          <tr>
-            <td class="notCompleted">Programing Basics</td>
-            <td>5</td>
-            <td>Assessment</td>
-            <td>5,3</td>
-          </tr>
-          <tr>
-            <td rowspan="2">2</td>
-            <td rowspan="2" class="notCompleted">Object Oriented Programming</td>
-            <td rowspan="2">10</td>
-            <td>Case study (50%)</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td>Project (50%)</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td rowspan="4">3</td>
-            <td class="notCompleted">Framework Development 1</td>
-            <td>5</td>
-            <td>Case study</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td rowspan="3" class="notCompleted">Framework Project 1</td>
-            <td rowspan="3">7,5</td>
-            <td>Project (33%)</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td>Case study program (33%)</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td> Report (33%)</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td rowspan="3">4</td>
-            <td rowspan="3" class="notCompleted">Framework Project 2</td>
-            <td rowspan="3">10</td>
-            <td>Portfolio (50%)</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td>Project (25%)</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td>Assesment (25%)</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td>The entire year</td>
-            <td class="notCompleted">Personal Professional Development</td>
-            <td>12,5</td>
-            <td>Portfolio</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td rowspan="2">Whenever</td>
-            <td class="notCompleted">Personality 1</td>
-            <td>1,25</td>
-            <td>Portfolio</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td class="notCompleted">Personality 2</td>
-            <td>1,25</td>
-            <td>Portfolio</td>
-            <td>5</td>
-          </tr>
-        </table>
-        <p><label for="file">NBSA grens:</label>
-          <progress id="file" max="45" value="0"> 0% </progress>
-        </p>
-
-      </article>
-    </main>
-  </div>
-  <script src="script.js"></script>
-
+    </article>
+  </main>
 </body>
+
+<script src="script.js"></script>
+
+<footer>
+  <img src="/img/hz.png" alt="HZ logo" style="margin-top: 1em;">
+</footer>
 
 </html>
